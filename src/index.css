@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF7ED;
+    font-family: "Inter", sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* body::-webkit-scrollbar{
+    display: none;
+} */
+
+header {
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 10px;
+}
+
+header .site-logo {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+header a {
+    text-decoration: none;
+    color: #4D4D4D;
+    font-weight: 600;
+    padding: 5px 20px;
+
+}
+
+/* nav>*/
+header a:hover {
+    color: #161616;
+    text-decoration: underline;
+}
+
+.link-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-weight: 700;
+    color: white;
+}
+
+/* .link-button:hover{
+    transform : translate(1px, 1px);
+} */
+
+
+/* HOME PAGE */
+
+.home-container {
+    background: linear-gradient(0deg, rgba(0,0,0,0.46),rgba(0,0,0,0.46)), url("images/mountain.png") center;
+    min-height: 400px;
+    color: white;
+    padding: 45px 25px;
+    
+}
+
+.home-container h1 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 42px;
+
+}
+
+/* .home-container>p */
+.home-container p {
+    line-height: 24px;
+}
+
+.home-container a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #FF8C38;
+    border : none;
+    border-radius: 5px;
+    width : 100%;
+    margin-top:25px;
+    /* padding-block: 0.75rem; */
+   padding : 10px; 
+   font-weight: 700;  
+   color : white;
+}
+
+/* ABOUT PAGE */
+
+.about-hero-img{
+    width: 100%;
+
+}
+
+.about-page-content{
+    padding: 25px;
+    color : #161616;
+    margin-bottom: 55px;
+}
+
+
+.about-page-content h1{
+    line-height: 38px;
+}
+
+.about-page-content p{
+    line-height: 22px;
+}
+
+
+.about-page-cta{
+    background-color: #FFCC8D;
+    color : #161616;
+    margin : 40px 15px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    padding-bottom : 40px;
+}
+
+
+
+/* VANG PAGES */
+
+.van-list-container{
+    padding-inline: 23px;
+}
+
+.van-list{
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 34px;
+    margin-top : 57px;
+}
+
+.van-tile a{
+color : #161616;
+}
+
+.van-tile img{
+max-width: 100%;
+border-radius: 5px;
+}
+
+.van-list-container button {
+    margin-right: 20px;
+}
+
+.van-type{
+ height: 34px;
+ padding: 6px 26px;
+ font-weight: 500;
+ border-radius: 5px;
+ background-color: #FFEAD0;
+ color: #4D4D4D;
+}
+
+.van-type:hover {
+    color: #FFEAD0;
+}
+
+.van-type.selected {
+    color: #FFEAD0;
+}
+
+.van-type.simple:hover, .van-type.simple.selected {
+    background-color: #E17654;
+}
+
+.van-type.rugged:hover, .van-type.rugged.selected {
+    background-color: #115E59;
+}
+
+.van-type.luxury:hover, .van-type.luxury.selected {
+    background-color: #161616;
+}
+/* 
+.van-info{
+    display : flex;
+} */
+
+.van-info h1{
+    margin-right: auto;;
+}
+
+
+/* VAN DETAIL */
+
+.van-detail-container {
+    padding: 27px;
+}
+
+.van-detail-container .back-button {
+    color: black;
+    text-decoration: none;
+}
+
+/* .van-detail-container .back-button:visited {
+    
+} */
+
+.van-detail-container .back-button span {
+    text-decoration: underline;
+}
+
+.van-detail {
+    display: flex;
+    flex-direction: column;
+    color: #161616;
+}
+
+.van-detail img {
+    border-radius: 5px;
+    margin-block: 47px;
+}
+
+.van-detail h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.van-detail > i {
+    align-self: flex-start;
+}
+
+.van-detail .van-price {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.van-detail .van-price span {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.van-detail .link-button {
+    background-color: #FF8C38;
+    color: white;
+    font-size: 1.125rem;
+}
